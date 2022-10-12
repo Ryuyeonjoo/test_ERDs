@@ -95,9 +95,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 109,
-          "top": 78,
-          "zIndex": 2,
+          "left": 89.8,
+          "top": 45.2,
+          "zIndex": 8,
           "widthName": 128.8515625,
           "widthComment": 102.140625
         },
@@ -157,9 +157,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 645,
-          "top": 141,
-          "zIndex": 4,
+          "left": 725,
+          "top": 142.6,
+          "zIndex": 6,
           "widthName": 60,
           "widthComment": 60
         },
@@ -219,9 +219,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 681,
-          "top": 349,
-          "zIndex": 3,
+          "left": 733.8,
+          "top": 401,
+          "zIndex": 7,
           "widthName": 60,
           "widthComment": 60
         },
@@ -280,10 +280,10 @@
           }
         ],
         "ui": {
-          "active": false,
-          "left": 108.5555,
-          "top": 293.1109,
-          "zIndex": 1,
+          "active": true,
+          "left": 94.1555,
+          "top": 267.5109,
+          "zIndex": 9,
           "widthName": 60,
           "widthComment": 60
         },
@@ -369,8 +369,8 @@
           "columnIds": [
             "e9a97185-c8cb-4e17-b8ae-09b4a3853202"
           ],
-          "x": 596.28515625,
-          "y": 133,
+          "x": 577.08515625,
+          "y": 100.2,
           "direction": "right"
         },
         "end": {
@@ -378,8 +378,8 @@
           "columnIds": [
             "3e4e52ab-f90d-49b6-979d-3f5f2dc52a9d"
           ],
-          "x": 681,
-          "y": 404,
+          "x": 733.8,
+          "y": 456,
           "direction": "left"
         },
         "constraintName": "fk_영화 이름과 장르_to_대여자",
@@ -395,8 +395,8 @@
           "columnIds": [
             "ef3295a0-625e-453f-9413-0db1e0f7d077"
           ],
-          "x": 881.155517578125,
-          "y": 251,
+          "x": 961.155517578125,
+          "y": 252.6,
           "direction": "bottom"
         },
         "end": {
@@ -404,8 +404,8 @@
           "columnIds": [
             "7325d14f-7337-4ad1-b419-689d6f290ec8"
           ],
-          "x": 920.913330078125,
-          "y": 349,
+          "x": 973.713330078125,
+          "y": 401,
           "direction": "top"
         },
         "constraintName": "fk_사용자들_to_대여자",
@@ -421,8 +421,8 @@
           "columnIds": [
             "e9a97185-c8cb-4e17-b8ae-09b4a3853202"
           ],
-          "x": 352.642578125,
-          "y": 188,
+          "x": 333.442578125,
+          "y": 155.2,
           "direction": "bottom"
         },
         "end": {
@@ -430,8 +430,8 @@
           "columnIds": [
             "3e081fa3-ebed-4bb0-8025-ba7223c737f8"
           ],
-          "x": 366.89290234375,
-          "y": 293.1109,
+          "x": 352.49290234375,
+          "y": 267.5109,
           "direction": "top"
         },
         "constraintName": "fk_영화 이름과 장르_to_포스터",
@@ -456,8 +456,8 @@
           "columnIds": [
             "1291e307-f117-4cb3-bf4b-cd8615603089"
           ],
-          "x": 366.89290234375,
-          "y": 403.1109,
+          "x": 352.49290234375,
+          "y": 377.5109,
           "direction": "bottom"
         },
         "constraintName": "fk_포스터목록_to_포스터",
