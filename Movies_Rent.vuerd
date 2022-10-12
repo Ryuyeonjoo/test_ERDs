@@ -291,7 +291,7 @@
         "id": "bf5512ab-1c5d-463e-951b-7b7dd0f87f0f"
       },
       {
-        "name": "",
+        "name": "POSTER_LIST",
         "comment": "포스터목록",
         "columns": [
           {
@@ -342,11 +342,11 @@
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 118.3337,
           "top": 506.6668,
-          "zIndex": 123,
-          "widthName": 60,
+          "zIndex": 124,
+          "widthName": 77.40380859375,
           "widthComment": 67
         },
         "visible": true,

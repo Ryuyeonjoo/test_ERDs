@@ -1,0 +1,538 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "REVIEWS",
+        "comment": "리뷰들",
+        "columns": [
+          {
+            "name": "REVIEW_UNIQUE_ID",
+            "comment": "리뷰대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 120.1298828125,
+              "widthComment": 67,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "33685301-356f-4a8f-b86f-7de9305c7dcc"
+          },
+          {
+            "name": "REVIEW_TITLE",
+            "comment": "리뷰 제목",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 83.60546875,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "be4549c9-dc82-4c62-a505-655330224e2b"
+          },
+          {
+            "name": "COMMENT",
+            "comment": "내용",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.5712890625,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "87cbbb22-193f-4e5d-bd03-30f90254f8e7"
+          },
+          {
+            "name": "CREATED_DATE",
+            "comment": "작성일",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 91.34326171875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "430ecb33-9704-48eb-8457-15108c0616b7"
+          },
+          {
+            "name": "SCORE",
+            "comment": "별점",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f895ea7c-21dd-41ad-a054-5b7023ed87c9"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 45,
+          "top": 30,
+          "zIndex": 101,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "a7c0efb2-37b8-48dc-bd6c-249ad8499270"
+      },
+      {
+        "name": "MOVIES_LIST",
+        "comment": "영화이름목록",
+        "columns": [
+          {
+            "name": "MOVIES",
+            "comment": "영화 이름",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "08138023-32dd-4ee3-a611-b6fe26fc8f87"
+          },
+          {
+            "name": "MOVIES_UNIQUE_ID",
+            "comment": "영화 이름 대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 121.919921875,
+              "widthComment": 102.140625,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "c36a8f0a-6f74-41a4-a551-60b893e19cf9"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 675,
+          "top": 407,
+          "zIndex": 98,
+          "widthName": 78.7939453125,
+          "widthComment": 80
+        },
+        "visible": true,
+        "id": "32579425-bf22-42af-b9ed-70989a6cbad9"
+      },
+      {
+        "name": "영화이름들",
+        "comment": "",
+        "columns": [
+          {
+            "name": "MOVIES_UNIQUE_ID",
+            "comment": "영화 이름 대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 121.919921875,
+              "widthComment": 102.140625,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "862a85ab-8c6b-4d40-b430-6365abf873c9"
+          },
+          {
+            "name": "REVIEW_UNIQUE_ID",
+            "comment": "리뷰대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 120.1298828125,
+              "widthComment": 67,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "c88f5b15-0e55-41e6-91e9-6778186bfba5"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 631,
+          "top": 181,
+          "zIndex": 97,
+          "widthName": 67,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "9e8f4479-3001-46b7-9bdc-d85b0a9594ea"
+      },
+      {
+        "name": "CREATERS",
+        "comment": "작성자들",
+        "columns": [
+          {
+            "name": "REVIEW_UNIQUE_ID",
+            "comment": "리뷰대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 120.1298828125,
+              "widthComment": 67,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "59d6445f-ac3c-4e6f-9b33-ada0a393e94b"
+          },
+          {
+            "name": "USERS_UNIQUE_ID",
+            "comment": "사용자들 대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 112.3095703125,
+              "widthComment": 97.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "89eda9bf-3db7-4a87-bcf7-6cf91d5060ad"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 60,
+          "top": 293,
+          "zIndex": 83,
+          "widthName": 61.16650390625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "93fa1582-2bfd-4901-b3f8-5a3853d429dc"
+      },
+      {
+        "name": "USERS",
+        "comment": "사용자들",
+        "columns": [
+          {
+            "name": "USERS",
+            "comment": "사용자들",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "06ec6718-fe47-48eb-898f-c6ade42ffd29"
+          },
+          {
+            "name": "USERS_UNIQUE_ID",
+            "comment": "사용자들 대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 112.3095703125,
+              "widthComment": 97.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "5eb3e6fe-68f9-4bfe-8171-1db2a81d8d0f"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 65,
+          "top": 504,
+          "zIndex": 96,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "3b8c17bf-934e-475a-9fb0-9f99b0396b8d"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "a7c0efb2-37b8-48dc-bd6c-249ad8499270",
+          "columnIds": [
+            "33685301-356f-4a8f-b86f-7de9305c7dcc"
+          ],
+          "x": 266.71142578125,
+          "y": 201.5,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "93fa1582-2bfd-4901-b3f8-5a3853d429dc",
+          "columnIds": [
+            "59d6445f-ac3c-4e6f-9b33-ada0a393e94b"
+          ],
+          "x": 296.99658203125,
+          "y": 293,
+          "direction": "top"
+        },
+        "constraintName": "fk_reviews_to_creaters",
+        "visible": true,
+        "id": "d4bfb515-6209-422d-976a-7f5087644e2f"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "3b8c17bf-934e-475a-9fb0-9f99b0396b8d",
+          "columnIds": [
+            "5eb3e6fe-68f9-4bfe-8171-1db2a81d8d0f"
+          ],
+          "x": 298.08642578125,
+          "y": 504,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "93fa1582-2bfd-4901-b3f8-5a3853d429dc",
+          "columnIds": [
+            "89eda9bf-3db7-4a87-bcf7-6cf91d5060ad"
+          ],
+          "x": 296.99658203125,
+          "y": 403,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_users_to_creaters",
+        "visible": true,
+        "id": "be93181b-b2d8-4930-8a83-048e8ef949c3"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "32579425-bf22-42af-b9ed-70989a6cbad9",
+          "columnIds": [
+            "c36a8f0a-6f74-41a4-a551-60b893e19cf9"
+          ],
+          "x": 915.1767578125,
+          "y": 407,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "9e8f4479-3001-46b7-9bdc-d85b0a9594ea",
+          "columnIds": [
+            "862a85ab-8c6b-4d40-b430-6365abf873c9"
+          ],
+          "x": 871.1767578125,
+          "y": 291,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_movies_list_to_영화이름들",
+        "visible": true,
+        "id": "080a40af-4f4a-49de-9e61-2965e2756504"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "a7c0efb2-37b8-48dc-bd6c-249ad8499270",
+          "columnIds": [
+            "33685301-356f-4a8f-b86f-7de9305c7dcc"
+          ],
+          "x": 488.4228515625,
+          "y": 115.75,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "9e8f4479-3001-46b7-9bdc-d85b0a9594ea",
+          "columnIds": [
+            "c88f5b15-0e55-41e6-91e9-6778186bfba5"
+          ],
+          "x": 631,
+          "y": 236,
+          "direction": "left"
+        },
+        "constraintName": "fk_reviews_to_영화이름들",
+        "visible": true,
+        "id": "02b198ae-23a4-488b-83e3-94a769617d09"
+      }
+    ]
+  }
+}

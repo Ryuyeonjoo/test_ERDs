@@ -78,7 +78,7 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
@@ -101,7 +101,7 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
@@ -143,7 +143,7 @@
           "active": false,
           "left": 137,
           "top": 98,
-          "zIndex": 83,
+          "zIndex": 86,
           "widthName": 60,
           "widthComment": 60
         },
@@ -163,7 +163,7 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
@@ -205,7 +205,7 @@
           "active": false,
           "left": 131,
           "top": 296,
-          "zIndex": 84,
+          "zIndex": 88,
           "widthName": 85.60498046875,
           "widthComment": 67
         },
@@ -265,9 +265,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 586,
-          "top": 135,
-          "zIndex": 72,
+          "left": 615,
+          "top": 175,
+          "zIndex": 87,
           "widthName": 60,
           "widthComment": 60
         },
@@ -300,8 +300,8 @@
           "columnIds": [
             "d3999a4f-e2f0-42ba-b2fd-d3e3842b59b4"
           ],
-          "x": 586,
-          "y": 162.5,
+          "x": 615,
+          "y": 202.5,
           "direction": "left"
         },
         "constraintName": "fk_users_to_auths",
@@ -326,8 +326,8 @@
           "columnIds": [
             "3219d850-84f7-46f9-bc7b-cb1576049528"
           ],
-          "x": 586,
-          "y": 217.5,
+          "x": 615,
+          "y": 257.5,
           "direction": "left"
         },
         "constraintName": "fk_autho_names_to_auths",
