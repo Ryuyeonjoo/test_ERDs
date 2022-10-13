@@ -1,0 +1,166 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "ORGANIZATIONS",
+        "comment": "조직도",
+        "columns": [
+          {
+            "name": "UNIQUE_ID",
+            "comment": "대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 68.87255859375,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "aa3e0bfc-85a9-40b6-b559-695f0e578c00"
+          },
+          {
+            "name": "DEPARTMENT",
+            "comment": "부서명",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 82.970703125,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "028dce59-380f-4d9b-bb8a-16db1a267a2b"
+          },
+          {
+            "name": "UNIQUE_ID_PARENT",
+            "comment": "상위 대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 120.83447265625,
+              "widthComment": 71.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "a2c04c04-0fa3-465c-8f75-85d65a1d72b9"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 38,
+          "top": 110,
+          "zIndex": 18,
+          "widthName": 103.5498046875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "9aee6d2d-b4c4-4f2d-959d-4eba92f6e628"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "9aee6d2d-b4c4-4f2d-959d-4eba92f6e628",
+          "columnIds": [
+            "aa3e0bfc-85a9-40b6-b559-695f0e578c00"
+          ],
+          "x": 466.69775390625,
+          "y": 110,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "9aee6d2d-b4c4-4f2d-959d-4eba92f6e628",
+          "columnIds": [
+            "a2c04c04-0fa3-465c-8f75-85d65a1d72b9"
+          ],
+          "x": 486.69775390625,
+          "y": 130,
+          "direction": "right"
+        },
+        "constraintName": "fk_organizations_to_organizations",
+        "visible": true,
+        "id": "16be6f45-dec5-4528-a344-1d89ece45dc7"
+      }
+    ]
+  }
+}
